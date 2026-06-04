@@ -3,8 +3,8 @@ class Player:
         name = name
         self.id_code = id_code
         self.ppg = ppg
-        self.apg = apg
         self.rpg = rpg
+        self.apg = apg
         self.spg = spg
         self.bpg = bpg
         self.mpg = mpg
@@ -13,7 +13,15 @@ class Player:
 
     def display_stats(self):
         print(self.name)
-        print("\n----------------------")
-        
+        print("----------------------")
+        print(f"Points per game: {self.ppg}")
+        print(f"Rebounds per game: {self.rpg}")
+        print(f"Assists per game: {self.apg}")
+        print(f"Steals per game: {self.spg}")
+        print(f"Blocks per game: {self.bpg}")
+        print(f"Minutes per game: {self.mpg}")
+        print(f"Field Goal Percentage: {round(self.fg_perc * 100, 1)}%")
+        print(f"Three Point Percentage: {round(self.three_pt_perc * 100, 1)}%")
+
 
 
